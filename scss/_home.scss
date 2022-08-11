@@ -1,0 +1,17 @@
+.mainHome {
+    width: 100%;
+    @include flex(flex-start, flex-end, nowrap);
+    color: $color1;
+
+    .div__text {
+        width: 250px;  
+        margin: 0 1em 1.7em 1.5em;
+        text-shadow: 3px 3px 3px black;
+
+        &--p {
+            @include font(2.7em, unset);
+            line-height: 1.2em;
+        }
+    }
+}
+

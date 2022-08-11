@@ -1,0 +1,63 @@
+   .preguntas {
+       #accordionPanelsStayOpenExample {
+           width: 95%;
+           margin: 0 auto;
+
+           .accordion {
+               &-button {
+                   height: 3em;
+                   background: linear-gradient(30deg, #30303e 78%, #8ba5bb 22%);
+                   color: $color1;
+                   text-shadow: 1px 1px 3px #000;
+                   font-weight: 500;
+               }
+
+               &-body {
+                   background: rgb(233, 233, 238);
+                   @include font (1.1em, 500);
+
+                   .text {
+                       text-align: right;
+                   }
+
+                   .div--galeria {
+                       @include flex(space-between, center, unset)
+                   }
+
+                   .galeria {
+                       width: 100%;
+                       height: 180px;
+                       border: solid 5px #f5efe9;
+                       border-radius: 10px;
+                       background-image: url(../imagenes/clientes.jpg);
+                       background-size: cover;                       
+                       margin: 0 auto;
+                       animation: slider 10s linear infinite;
+                   }
+
+                   @keyframes slider {
+                       from {
+                           background-position: left center;
+                       }
+
+                       to {
+                           background-position: right center;
+                       }
+                   }
+               }
+
+               ul li {
+                   list-style: circle;
+               }
+
+               &-flush {
+                   color: $color2;
+                   @include font(1.2em, 500);
+               }
+
+               &-flush p {
+                   margin: 0;
+               }
+           }
+       }
+   }

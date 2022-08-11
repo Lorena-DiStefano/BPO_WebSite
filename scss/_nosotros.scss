@@ -1,0 +1,66 @@
+.nos {
+    width: 100%;
+
+    .principal {
+        width: 90%;
+        margin: 0 auto;
+        color: #ffffff;
+        text-shadow: 2px 2px 3px #000000;
+        margin-bottom: 2em;
+        margin: 0 auto;
+
+        &__div {
+            background-color: rgba(0, 17, 73, .4);
+            background-size: contain;
+            border-radius: 15px;
+            margin: 0;
+            padding: 1em 0;
+            @include flex(center, center, unset);
+
+            &--text {
+                width: 90%;
+                margin: 0 auto;
+
+                .text-a {
+                    @include font(1.5em, 500);
+                    line-height: 1.2em;
+                }
+
+                .text-b {
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+
+    .secundario {
+        background-color: white;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        padding: 10px;
+    }
+
+    .final {
+        width: 90%;
+        margin: 0 auto;
+        color: #ffffff;
+        text-shadow: 2px 2px 3px #000000;
+        margin-bottom: 2em;
+        margin: 0 auto;       
+
+        .contraste-final {
+            background-color: rgba(0, 17, 73, .5);
+            background-size: 100%,100%;
+            border-radius: 10px;
+            margin: 0 auto;
+            
+            p{
+               padding: 1em;
+               font-size: 1.4em;
+               text-align: center;
+            }                    
+        }
+    }
+}

@@ -1,0 +1,29 @@
+$color1: #f3f0e9;
+$color2: #001149;
+$color3: #e1dfda;
+$color4: #00ffff;
+
+@mixin font ($fs, $fwh) {
+    font-family: 'Raleway', 'DM Sans', sans-serif;
+    font-size: $fs;
+    font-weight: $fwh;
+}
+
+@mixin bg ($bg-img, $bg-color) {
+    background-image:$bg-img ;
+    background-color: $bg-color;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@mixin flex($jc, $ai, $fw) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $fw;
+}
+
+$nosotros:(uno: #4682b4b3,dos: #4682b44d,tres:#37b0a480);
+
+

@@ -1,0 +1,93 @@
+.servicios {
+
+    h1 {
+        text-align: center;
+        font-size: 3.5em;
+        text-shadow: 2px 2px 3px #fff;
+    }
+
+    .galeria {
+        width: 100%;
+        @include flex(space-evenly, unset, wrap);
+
+        .cards {
+            width: 310px;
+
+            img {
+                width: 310px;
+                height: 250px;
+                margin-bottom: 5px;
+                margin-top: 10px;
+                border: 3px solid lightgray;
+                border-radius: 8px;
+            }
+
+            input[type='checkbox'] {
+                display: none;
+            }
+
+            .label {
+                display: block;
+                @include font(1.3em,500);
+                text-align: center;
+                padding: 1em;
+                width: 310;
+                color: $color4;
+                background-color: black;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: all 0.25s ease-out;
+
+                &:hover {
+                    color: rgb(73, 73, 250)
+                }
+
+                &::before {
+                    content: ' ';
+                    display: inline-block;
+                    border-top: 5px solid transparent;
+                    border-bottom: 5px solid transparent;
+                    border-left: 5px solid currentColor;
+                    color: aqua;
+                    margin-right: .7em;
+                    transform: translateY(-2px);
+                    transition: transform .2s ease-out;
+                }
+            }
+
+            .cards-content {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height .25s ease-in-out;
+
+                .content {
+                    background-color:$color1;
+                    @include font(1.2em,500);
+                    border-radius: 8px;
+                    padding: .5em 1em;
+                }
+
+                span {
+                    font-weight: 600;
+                    padding: 0 7px;
+                    font-family: Verdana, Tahoma, sans-serif;
+                    text-shadow: 1px 1px 1px white;
+                }
+            }
+
+            .button:checked+.label+.cards-content {
+                max-height: 100vh;
+                overflow: visible;
+            }
+
+            .button:checked+.label::before {
+                transform: rotate(90deg) translateX(-3px);
+                color: rgb(73, 73, 250)
+            }
+        }
+
+        footer {
+            margin-top: .5em;
+        }
+    }
+}

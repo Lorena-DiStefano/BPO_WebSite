@@ -1,0 +1,71 @@
+.container {
+
+    .mail {
+        font-style: italic;
+        color: $color4;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .conText {
+        @include font(1.2em, 600);
+        margin: 0 auto;
+        margin-bottom: 1em;
+        text-align: start;
+    }
+
+    .conText-b {
+        text-shadow: 2px 2px 3px $color1;
+        text-align: center;
+        @include font(2.5em, 500);
+        line-height: 1em;
+    }
+
+    .form__input,
+    .form__textarea {
+        background: rgba(243, 240, 233, .2);
+        border: none;
+        outline: none;
+        border-radius: 7px;
+        border-right: 5px outset $color4;
+        border-bottom: 5px outset $color2;
+        margin-bottom: 15px;
+        margin-left: 14px;
+        padding: 3px;
+        @include font(1.1em, 500);
+        color: black;
+
+        &:hover {
+            background: $color1;
+        }
+    }
+
+    .form__textarea {
+        height: 17em;
+    }
+
+    .submit {
+        background: rgba(243, 240, 233, .2);
+        @include font(1em, 600);
+        border-radius: 8px;
+        border-right: 5px outset $color4;
+        border-bottom: 5px outset $color2;
+        text-shadow: 1px 1px 1px white;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: all .5s ease;
+        margin-bottom: 1em;
+    }
+
+    .submit:hover {
+        background-color: rgba(0, 242, 255, .3);
+    }
+
+    .form__label {
+        color: $color4;
+        @include font(1.25em, 600);
+        text-shadow: 2px 2px 2px #000;
+        justify-self: left;
+        margin-left: 16px;
+        margin-bottom: 5px;
+    }
+}

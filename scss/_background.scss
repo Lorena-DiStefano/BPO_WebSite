@@ -1,0 +1,27 @@
+.home {
+    @include bg (url(../imagenes/bghome.jpg),unset);
+}
+
+.nosotros {  
+   @include bg(url(../imagenes/bgservicios.jpg), unset);
+
+    .nos{
+        .principal,.final{
+            @include bg(url(../imagenes/bgnosotros-a.jpg),unset);
+            background-attachment: unset;
+            border-radius: 15px;
+        }        
+    }
+}
+
+.preguntas {
+    @include bg (url(../imagenes/bgpreguntas.jpg), unset);
+}
+
+.servicios {
+    @include bg(url(../imagenes/bgservicios.jpg), unset);
+}
+
+.contacto {
+    @include bg(url(../imagenes/bgcontacto.jpg),unset);
+}
