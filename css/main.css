@@ -152,7 +152,7 @@ body {
       background-image: url(../imagenes/clientes.jpg);
       background-size: cover;
       margin: 0 auto;
-      animation: slider 10s linear infinite; }
+      animation: slider 10s ease-in-out alternate infinite; }
 
 @keyframes slider {
   from {
@@ -249,7 +249,8 @@ body {
 .container .conText {
   font-family: 'Raleway', 'DM Sans', sans-serif;
   font-size: 1.2em;
-  font-weight: 600;
+  font-weight: 800;
+  text-shadow: 1px 1px 1px #f3f0e9;
   margin: 0 auto;
   margin-bottom: 1em;
   text-align: start; }
@@ -495,12 +496,18 @@ body {
   .servicios .galeria .cards .label {
     width: 420px; } }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .contacto .conText {
     font-size: 1.3em; }
   .contacto .conText-b {
-    margin-left: 1em;
     font-size: 3em; }
+  .contacto .form__textarea,
+  .contacto .submit {
+    margin-left: 1em; } }
+
+@media screen and (min-width: 992px) {
+  .contacto .conText-b {
+    margin-left: 1.5em; }
   .contacto .form__textarea,
   .contacto .submit {
     margin-left: 2em; } }
