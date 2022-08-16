@@ -7,8 +7,9 @@
     }
 
     .conText {
-        @include font(1.2em, 800);
-        text-shadow: 1px 1px 1px $color1;
+        @include font(1.3em, 800);
+        text-shadow: 2px 2px 2px black;
+        color: $color1;
         margin: 0 auto;
         margin-bottom: 1em;
         text-align: start;

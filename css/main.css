@@ -248,9 +248,10 @@ body {
 
 .container .conText {
   font-family: 'Raleway', 'DM Sans', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 800;
-  text-shadow: 1px 1px 1px #f3f0e9;
+  text-shadow: 2px 2px 2px black;
+  color: #f3f0e9;
   margin: 0 auto;
   margin-bottom: 1em;
   text-align: start; }
